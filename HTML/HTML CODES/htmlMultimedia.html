@@ -1,0 +1,59 @@
+
+
+<!--HTML MULT-MEDIA-->
+<!--hapa chini tumetumia <video> element ili kuweka video kwenye website yetu
+    tumetumia pia width na height attribute ili kuweka saizi ya video isizidi kuwa kubwa sana
+controls* attribute hutumika ili kuweka video control kama play , pause na volume
+source hutumika kuweka alternative/mbadala ili ikitokea format ya mp4 haijawa supported bas format ya ogg itaplay
+maneno " Your browser does not support the video tag." hutokea tu pale ambapo browser haisupport kabisa video 
+kitu ambacho ni kigumu kwa browser za kisasa lazima zisupport video-->
+    
+<video width="320" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+
+  <!--video yenye attribute ya autoplay hii huplay yenyew bila user kuclick play button
+  kwa hiyo hii hatuweki controls attributes badala yake tunaweka autoplay attribute-->
+
+  <video width="320" height="240" autoplay>
+    <source src="movie.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+
+  <!--chromium browser hazisupport autoplay kwa  hiyo inabidi
+tuongeze attribute nyingne inayoitwa muted ili iwe autoplay muted-->
+
+<video width="320" height="240" autoplay muted>
+    <source src="movie.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+
+  <!-- !!!: HTML AUDIO -->
+  <br/>
+  <br/>
+
+  <audio controls>
+    <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+
+  <!-- !!!: html audio autoplay muted -->
+  <audio controls autoplay muted>
+    <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+
+<h2>YOUTUBE VIDEO </h2>
+  <!-- !!!: HTML YOUTUBE VIDEO  kuweka youtube video tunatumia 
+iframe element na src= kwa ajili ya kuweka link ya hiyo video -->
+  <iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+
+<h2>YOUTUBE VIDEO AUTOPLAY MUTED</h2>
+<!-- !!!: youtube video autoplay muted ili kuweka autoplay utaiweka 
+autoplay=1   na muted=1 -->
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+</iframe>
